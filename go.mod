@@ -9,5 +9,6 @@ require (
 	github.com/sony/sonyflake v1.0.0
 	go.etcd.io/etcd/api/v3 v3.5.4
 	go.etcd.io/etcd/client/v3 v3.5.4
+	google.golang.org/grpc v1.47.0 // indirect
 	openpitrix.io/logger v0.1.0
 )
