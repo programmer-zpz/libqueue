@@ -5,8 +5,8 @@
 package etcd
 
 import (
-	"github.com/coreos/etcd/clientv3"
-	"github.com/coreos/etcd/contrib/recipes"
+	"go.etcd.io/etcd/client/v3"
+	"go.etcd.io/etcd/client/v3/experimental/recipes"
 
 	i "openpitrix.io/libqueue"
 )

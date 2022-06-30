@@ -12,7 +12,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/coreos/etcd/version"
+	version "go.etcd.io/etcd/client/v3"
+	//"github.com/coreos/etcd/version"
 
 	i "openpitrix.io/libqueue"
 	q "openpitrix.io/libqueue/queue"
