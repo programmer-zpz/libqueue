@@ -5,11 +5,11 @@
 package etcd
 
 import (
+	"cloudbases.io/logger"
 	"context"
 	"fmt"
 	"go.etcd.io/etcd/api/v3/mvccpb"
 	"go.etcd.io/etcd/client/v3"
-	"openpitrix.io/logger"
 
 	i "cloudbases.io/libqueue"
 	"cloudbases.io/libqueue/util"

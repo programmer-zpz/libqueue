@@ -7,8 +7,8 @@ package redis
 import (
 	"errors"
 
+	"cloudbases.io/logger"
 	"github.com/go-redis/redis"
-	"openpitrix.io/logger"
 
 	i "cloudbases.io/libqueue"
 )

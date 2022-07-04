@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"openpitrix.io/logger"
+	"cloudbases.io/logger"
 
 	q "cloudbases.io/libqueue/queue"
 )

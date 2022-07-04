@@ -12,9 +12,9 @@ import (
 	"strings"
 	"time"
 
+	"cloudbases.io/logger"
 	"github.com/go-redis/redis"
 	"go.etcd.io/etcd/client/v3/namespace"
-	"openpitrix.io/logger"
 
 	i "cloudbases.io/libqueue"
 	qetcd "cloudbases.io/libqueue/etcd"

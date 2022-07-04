@@ -7,7 +7,7 @@ package test
 import (
 	"testing"
 
-	"openpitrix.io/logger"
+	"cloudbases.io/logger"
 
 	q "cloudbases.io/libqueue/queue"
 )
