@@ -1,12 +1,12 @@
-// Copyright 2019 The OpenPitrix Authors. All rights reserved.
+// Copyright 2021 The Cloudbases Authors. All rights reserved.
 // Use of this source code is governed by a Apache license
 // that can be found in the LICENSE file.
 
 package redis
 
 import (
+	i "cloudbases.io/libqueue"
 	"github.com/go-redis/redis"
-	i "openpitrix.io/libqueue"
 )
 
 type RedisPubSub struct {

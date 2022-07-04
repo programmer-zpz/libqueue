@@ -1,4 +1,4 @@
-// Copyright 2019 The OpenPitrix Authors. All rights reserved.
+// Copyright 2021 The Cloudbases Authors. All rights reserved.
 // Use of this source code is governed by a Apache license
 // that can be found in the LICENSE file.
 
@@ -9,12 +9,10 @@ import (
 	"fmt"
 	"go.etcd.io/etcd/api/v3/mvccpb"
 	"go.etcd.io/etcd/client/v3"
-	//"github.com/coreos/etcd/clientv3"
-	//"github.com/coreos/etcd/mvcc/mvccpb"
 	"openpitrix.io/logger"
 
-	i "openpitrix.io/libqueue"
-	"openpitrix.io/libqueue/util"
+	i "cloudbases.io/libqueue"
+	"cloudbases.io/libqueue/util"
 )
 
 type EtcdPubSub struct {

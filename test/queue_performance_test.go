@@ -1,4 +1,4 @@
-// Copyright 2019 The OpenPitrix Authors. All rights reserved.
+// Copyright 2021 The Cloudbases Authors. All rights reserved.
 // Use of this source code is governed by a Apache license
 // that can be found in the LICENSE file.
 
@@ -15,8 +15,8 @@ import (
 	version "go.etcd.io/etcd/client/v3"
 	//"github.com/coreos/etcd/version"
 
-	i "openpitrix.io/libqueue"
-	q "openpitrix.io/libqueue/queue"
+	i "cloudbases.io/libqueue"
+	q "cloudbases.io/libqueue/queue"
 )
 
 func enqueue(queue i.IQueue) int {

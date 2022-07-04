@@ -1,4 +1,4 @@
-// Copyright 2019 The OpenPitrix Authors. All rights reserved.
+// Copyright 2021 The Cloudbases Authors. All rights reserved.
 // Use of this source code is governed by a Apache license
 // that can be found in the LICENSE file.
 
@@ -8,19 +8,17 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	clientv3 "go.etcd.io/etcd/client/v3"
 	"strings"
 	"time"
 
-	"go.etcd.io/etcd/client/v3"
-	"go.etcd.io/etcd/client/v3/namespace"
-	//"github.com/coreos/etcd/clientv3"
-	//"github.com/coreos/etcd/clientv3/namespace"
 	"github.com/go-redis/redis"
+	"go.etcd.io/etcd/client/v3/namespace"
 	"openpitrix.io/logger"
 
-	i "openpitrix.io/libqueue"
-	qetcd "openpitrix.io/libqueue/etcd"
-	qredis "openpitrix.io/libqueue/redis"
+	i "cloudbases.io/libqueue"
+	qetcd "cloudbases.io/libqueue/etcd"
+	qredis "cloudbases.io/libqueue/redis"
 )
 
 func NewIQueue(queueType string, qclient *i.IClient) (i.IQueue, error) {
