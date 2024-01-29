@@ -43,7 +43,7 @@ func (rq *RedisQueue) Enqueue(val string) error {
 func (rq *RedisQueue) Dequeue() (string, error) {
 	val, err := rq.BRPop(0, rq.Topic).Result()
 	if err != nil {
-		logger.Errorf(nil, "Enqueue from redis queue failded,err=%+v", err)
+		// logger.Errorf(nil, "Dequeue from redis queue failded,err=%+v", err)
 		return "", err
 	}
 
